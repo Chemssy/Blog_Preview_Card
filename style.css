@@ -1,0 +1,111 @@
+:root {
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray500: hsl(0, 0%, 42%);
+    --color-gray950: hsl(0, 0%, 7%);
+    --font-bold: "Figtree-Extra-Bold";
+    --font-medium: "Figtree-Medium";
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: var(--color-yellow);
+    font-size: 16px;
+}
+
+.card{
+    max-width: 37.5em;
+    height: auto;
+    border: 0.1875em solid black;
+    margin: 3.125em auto;
+    padding: 2.25em;
+    border-radius: 1.5625em;
+    background-color: var(--color-white);
+    border-right: 0.75em solid black;
+    border-bottom: 0.75em solid black;
+}
+
+img{
+    width: 100%;
+    border-radius: 1.5625em;
+}
+
+
+.content__category{
+    background-color: var(--color-yellow);
+    display: inline-block;
+    padding: 0.375em 0.25em;
+    border-radius: 0.25em;
+    font-size: 1.125em;
+    font-family: var(--font-medium);
+    font-weight: 600;
+    margin: 0em;
+    margin-top: 1em;
+}
+
+.content__date{
+    margin: 0;
+    margin-top: 1em;
+    font-family: var(--font-medium);
+}
+
+.content__title{
+    font-size: 2em;
+    font-family:var(--font-bold);
+    font-weight: 600;
+    margin: 0;
+    margin-top: 1rem;
+    color: var(--color-gray950);
+    text-wrap: balance;
+}
+
+.content__title:hover{
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
+.content__description{
+    font-size: 1.375em;
+    font-family: var(--font-medium);
+    font-weight: 500;
+    color: var(--color-gray500);
+    line-height: 1.4;
+}
+
+.autor{
+    display: flex;
+    justify-content: start;
+    column-gap: 0.625em;
+    align-items: center;
+}
+
+.autor__image{
+    max-width: 2.75em;
+}
+
+.autor__name{
+    font-family: var(--font-bold);
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+
+@media screen and (max-width:26.25em) {
+    body{
+        font-size: 10px;
+    }
+    
+    .card{
+        margin: 3.125em;
+    }
+    .autor{
+        max-width: 12em;
+    }
+
+    .autor__image{
+        max-width: 2.5em;
+    }
+}
